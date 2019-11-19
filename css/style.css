@@ -1,0 +1,118 @@
+/* Stylesheet by Madison for 575*/
+
+.title {
+    height: 20px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 18pt;
+}
+
+.map {
+    border: medium solid #999;
+    border-width: 2px;
+    margin: 10px 0 0 20px;
+}
+
+.gratBackground {
+    fill: #F7FBFF;
+}
+
+.gratLines {
+    fill: none;
+    stroke: #C6DBEF;
+    stroke-width: 0.33px;
+}
+
+.countries {
+    fill: #DEEBF7;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+.statesMap {
+    stroke: #fff;
+    stroke-width: 0.25px;
+    stroke-linecap: round;
+}
+
+.chart {
+    float: right;
+    margin: 7px 20px 0 0;
+}
+
+.chartBackground {
+    fill: #F7FBFF;
+}
+
+.chartFrame {
+    fill: none;
+    stroke: #999;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.chartTitle {
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: monospace;
+    font-size: 0.8em;
+    fill: #999;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 10;
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
+}
+
+option {
+    font-weight: normal;
+}
+
+.infoLabel {
+    position: absolute;
+    height: 30px;
+    min-width: 100px;
+    color: #4292C6;
+    background-color: #DEEBF7;
+    border: solid thin #fff;
+    padding: 5px 10px;
+    top: -75px;
+    font-family: monospace;
+}
+
+.infoLabel h1 {
+    margin: 5px 10px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 0.75em;
+}
+
+.text {
+    position: absolute;
+    top: 550px;
+    left: 740px;
+    margin: 0 30px 0 0;
+    font-family: monospace;
+    
+}
