@@ -224,8 +224,10 @@
             .attr("height", chartInnerHeight)
             .attr("transform", translate);
         
+        var xTitle = (chartWidth/2)-80;
+        
         var chartTitle = chart.append("text")
-            .attr("x", 190)
+            .attr("x", xTitle)
             .attr("y", 40)
             .attr("class", "chartTitle")
             .text(expressed + " by State");
@@ -413,18 +415,31 @@
     //the div element contains text directing where users should look for more information
     //I attempted to find a way to create a hyperlink, but couldn't find a working solution to do outside of the html document
     function createText() {  
-        var translateText = "translate(10, -110)";
+        var translateText = "translate(" + ((window.innerWidth/2)+70) + ", -40)";
         
         var text = d3.select("body")
-            .append("div")
+            .append("svg")
             .attr("width", chartWidth - 44)
             .attr("height", 100)
             .attr("class", "text")
             .attr("transform", translateText);
+            
+        var content1 = "For more information about the 2019 Cost of Living Index, visit";
+    
+        var content2 = "http://worldpopulationreview.com/states/cost-of-living-index-by-state/"
         
-        var content = "For more information about the 2019 Cost of Living Index, visit http://worldpopulationreview.com/states/cost-of-living-index-by-state/";
+        var line1 = text.append("text")
+            .attr("y", 10)
+            .attr("class", "textContent")
+            .text(content1);
         
-        text.html(content);
+        var line2 = text.append("text")
+            .attr("y", 30)
+            .attr("class", "textContent")
+            .text(content2);
+        
+        
+        
     };
     
 })();
